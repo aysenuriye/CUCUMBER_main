@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="144.007" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC01 Kullanici Amazonda Nutella aratir" time="37.38">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+Then arama kutusuna Nutella yazar ve enter tusuna basar.....................passed
+And arama sonuclarinin Nutella icerdigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC02 kullanici Amazonda Java aratir" time="19.117">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Java yazar ve enter tusuna basar........................passed
+Then arama sonuclarinin Java icerdigini test eder...........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC03 kullanici Amazonda Apple aratir" time="14.538">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Apple yazar ve enter tusuna basar.......................passed
+Then arama sonuclarinin Apple icerdigini test eder..........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003 Kullanici Amazonda parametre olarak yazdigi kelimeyi aratir" name="TC07 Kullanici parametre ile arama yaptirabilmeli" time="26.087">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+Then amazonda "Samsung" icin arama yapar....................................passed
+And sonuclarin "Samsung" icerdigini test eder...............................passed
+And 3 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 Kullanici amazonda urun aratip 2.urun detaylarini test eder" name="TC09 Kullanici arama sonuclarinda istedigi urunu test edebilmeli" time="45.287">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+When amazonda "Nutella" icin arama yapar....................................passed
+And 5 saniye bekler.........................................................passed
+And 3.urune gider...........................................................passed
+Then urun isminin "Nutella" icerdigini test eder............................passed
+]]></system-out>
+</testcase>
+</testsuite>
